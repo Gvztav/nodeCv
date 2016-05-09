@@ -1,29 +1,16 @@
 angular.module('spaApp', ['ngRoute'])
 .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-        .when('/presentacion', {
+        .when('/inicio', {
             templateUrl: 'inicio.html',
             controller: 'InicioCtrl',
  
         })
-        .when('/datosPersonales', {
-            templateUrl: 'perfil.html',
+        .when('/pagina2', {
+            templateUrl: 'pagina2.html',
             controller: 'PerfilCtrl',
         })
-        .when('/experiencia', {
-            templateUrl: 'mensajes.html',
-            controller: 'MensajesCtrl',
-        })
-    .when('/conocimientos', {
-            templateUrl: 'mensajes.html',
-            controller: 'MensajesCtrl',
-        })
-     .when('/vistaGeneral', {
-            templateUrl: 'vistalGeneral.html',
-            controller: 'MensajesCtrl',
-        })
         .otherwise({
-            redirectTo: '/presentacion'
+            redirectTo: '/inicio'
         });
 }]);
- 

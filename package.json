@@ -1,6 +1,6 @@
 {
-  "name": "cvNode",
-  "main": "cvNode.js",
+  "name": "cvNode2",
+  "main": "server.js",
   "dependencies": {
     "express": "~4.0.0",
     "body-parser": "~1.0.0",
