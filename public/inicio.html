@@ -92,7 +92,17 @@
     </noscript></td>
                                         </tr>
                                     </table>
-                                    <input id="inputenviar" class="btn btn-default" type="submit" value="Enviar">
+                                    <!--<input id="inputenviar" class="btn btn-default" type="submit" value="Enviar">-->
+
+
+                                     <label>Verificación :</label>
+<!-- Aca tambien colocamos la Clave del sitio Generada a la hora de crear la aplicación -->
+ <div class="g-recaptcha" data-sitekey="6LccgB8TAAAAAI_DAdaAsRZp0_j7MvsJdaC6lr3J"></div>    
+ <br>
+<!-- Al enviar el formulario validamos los elementos del formulario y también el cuadro de verificación del reCaptcha -->
+ <input type="submit" class="btn btn-primary" value="Aceptar" id="btnenviar" name="btnenviar" onclick="return valid()">
+
+
                                 
                                 </form> 
           
