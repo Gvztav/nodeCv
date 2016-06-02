@@ -10,6 +10,10 @@ angular.module('spaApp', ['ngRoute'])
             templateUrl: 'pagina2.html',
             controller: 'PerfilCtrl',
         })
+        .when('/conocimientos', {
+            templateUrl: 'conocimientos.html',
+            controller: 'ConocimientosCtrl',
+        })
         .otherwise({
             redirectTo: '/inicio'
         });
