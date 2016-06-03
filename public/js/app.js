@@ -14,6 +14,14 @@ angular.module('spaApp', ['ngRoute'])
             templateUrl: 'conocimientos.html',
             controller: 'ConocimientosCtrl',
         })
+        .when('/programacion', {
+            templateUrl: 'programacion.html',
+            controller: 'ProgramacionCtrl',
+        })
+        .when('/proyectos', {
+            templateUrl: 'proyectos.html',
+            controller: 'ProyectosCtrl',
+        })
         .otherwise({
             redirectTo: '/inicio'
         });
