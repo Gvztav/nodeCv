@@ -3,7 +3,7 @@ $(document).ready(function(){
         $("#myModal").modal();
     });
   
-  
+  //$(".sidebar-wrapper").hide();
   
   $('#formLogin').bootstrapValidator({
     message: 'Este valor no es valido',
