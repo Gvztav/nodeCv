@@ -3,6 +3,7 @@ $(document).ready(function(){
         $("#myModal").modal();
     });
   
+  
   //$(".sidebar-wrapper").hide();
   
   $('#formLogin').bootstrapValidator({
@@ -50,3 +51,7 @@ $(document).ready(function(){
   
   
 });
+
+
+
+
