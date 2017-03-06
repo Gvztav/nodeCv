@@ -1,12 +1,59 @@
-angular.module('spaApp', ['ngRoute'])
-.config(['$routeProvider', function ($routeProvider) {
+angular.module('spaApp', ['ngRoute', 'ngResource'])
+        //---------------
+        // Services
+        //---------------
+        .factory('Todos', ['$resource', function($resource){
+          return $resource('/todos/:id', null, {
+            'update': { method:'PUT' }
+           
+          });
+        }])
+
+        .factory('Experiencias', ['$resource', function($resource){
+          return $resource('/experienciasDAO/:id', null, {
+            'update': { method:'PUT' }
+           
+          });
+        }])
+
+         .factory('Conocimientos', ['$resource', function($resource){
+          return $resource('/conocimientosDAO/:id', null, {
+            'update': { method:'PUT' }
+           
+          });
+        }])
+
+          .factory('Herramientas', ['$resource', function($resource){
+          return $resource('/herramientasDAO/:id', null, {
+            'update': { method:'PUT' }
+           
+          });
+        }])
+
+        //---------------
+        // Controllers
+        //---------------
+
+
+        //---------------
+        // Routes
+        //---------------
+
+        .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-        .when('/inicio', {
+        .when('/', {
             templateUrl: 'inicio.html',
             controller: 'InicioCtrl',
  
         })
-        .when('/pagina2', {
+        /*.when('/', {
+              templateUrl: '/todos.html',
+              controller: 'TodoController'
+            })*/
+       /* .when('/:id', {
+              templateUrl: '/todoDetails.html',
+              controller: 'TodoDetailCtrl'
+        })*/.when('/pagina2', {
             templateUrl: 'pagina2.html',
             controller: 'PerfilCtrl',
         })
@@ -23,6 +70,6 @@ angular.module('spaApp', ['ngRoute'])
             controller: 'ProyectosCtrl',
         })
         .otherwise({
-            redirectTo: '/inicio'
+            redirectTo: '/'
         });
 }]);

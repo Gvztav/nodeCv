@@ -3,135 +3,16 @@
     <div class="main-wrapper">
             <section class="section experiences-section">
                 <h2 class="section-title"><i class="fa fa-briefcase"></i>{{message}}</h2>
-                     
-                <div class="item">
+
+                <div class="item" ng-repeat="herramienta in herramientas | filter: search">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">MySQL</h3>
+                            <h3 class="job-title">{{herramienta.herramienta}}</h3>
                         </div><!--//upper-row-->
                     </div><!--//meta-->
                     <div class="details">
                
-Inserción registros, borrado, actualización y obtención. Creación y borrado tablas, Uso de operadores Logicos y racionales. Busquedas por Patron, Conteo de registros.
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-                 <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Python</h3>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-              
-Lenguaje de programación Python. Noción en: Ciclos(while, for), condicionales, ficheros, importación de modulos(math) , listas y funciones  
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-                   <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">HTML Y CSS</h3>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-             
-
-HTML Y CSS. HTML:Conocimiento general de etiquetas, e ingreso de datos por tabla. CSS:Uso de selectores, div, float,propiedades, margin, padding, borders
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                        <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">JAVA</h3>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-             
-Conocimiento general: sentencias de control, estructuras de datos, Algoritmos, Tipos de datos abstractos, Herencia, Recursión, Abstración, Polimorfismo, Parametrización, Aliasing,Threads, encapsulamiento, information hiding, Complejidad, UML, Serializacion, Operadores, Programación Orientada a Objetos, Stream, Excepciones e Interfaces Gráficas(uso libreria swing y awt) y conexión a base datos(mysql). Control de versionado:Git. IDEs: Neetbeans, Eclipse.
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-                    
-                  <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">PHP Y Bases de Datos</h3>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-             
-
-Manejo de: Variables, estructuras de control, de repetición, estructuras de datos, funciones, clases, objetos, cookies, POO, formularios, recuperación de datos(request, post, get), conexion a base de datos, creacion de tablas, insercion, seleccion(operadores relacionales y lógicos ), eliminacion de registros, actualización de registros. Adicional: Uso de ajax y eventos. Uso de include, require, redireccionamiento, eventos, inyeccion SQL, seguridad, limpieza de datos, expresiones regulares.
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-  <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">JQuery/UI</h3>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-             
-
-Introducción al DOM, Funciones y selectores de jQuery, Modificar elementos de HTML,Eventos de jQuery,Efectos de jQuery) Vimos algunos efectos de jQuery, como .hide() y .fadeOut(). En esta lección vamos a ver los efectos de jQuery con más detalles y te enseñaremos otras cosas más
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-
-  <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Herramientas para Desarrollo</h3>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-        
-
-Xamp(apache, mysql, php), MySQL WorkBench, GlashFish(para aplicaciones web), Tomcat(para jsp), Filezilla(tranf archivos), Photoshop(diseño), Eclipse(Ide para java), Dreamweaver o Notepad (Ide para html, css, php), Neetbeans(Ide para java), Git(repositorio) VioletUML y WhiteStarUML(para diseño de software).
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-
- <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Bootstrap</h3>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-        
-
-instalación, manejo de rejilla, uso de iconos, uso de multiples clases, media-queris,aprovechamiento del diseño responsivo y las clases presentes para dar estilo a botones, formularios, imagenes,etc.
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
- <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">PL/SQL</h3>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-        
-
-
-Creacion de bloques, Manejo de Variables, Constantes, Utilización de %TYPE,%ROWTYPE, uso de SENTENCIAS SQL EN PL/SQL,COLECCIONES, manejo de tipos de datos complejos, cursores, funciones, procedimientos, paquetes, estructuras de control, manejo de excepciones, uso de forall, bulk collect y transacciones.
+                            {{herramienta.descripcion}}
                         
                     </div><!--//details-->
                 </div><!--//item-->

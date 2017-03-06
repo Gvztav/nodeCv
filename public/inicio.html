@@ -72,65 +72,31 @@ Specialties: JavaEE, html5,css3, Python. MySQL y PHP.
 </p>
                 </div><!--//summary-->
             </section><!--//section-->
+
+
+
             
             <section class="section experiences-section">
                 <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-                     
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Desarrollador Java</h3>
-                            <div class="time">2015 - Actualidad</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Softtek, Caba</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>
-                            Inicialmente tuve un entrenamiento en un desarrollo de una plataforma de pago durante 3 meses en la Software Factory. Para el desarrollo de la misma se utilizo: java, spring mvc, nodejs, javascript, angularjs, bootstrap, html, hibernate y  el gestor de base de datos sql server.
-Tambien utilizamos otras herramientas adicionales tanto para el front-end, como el back-end de forma tal que se pueda realizar un trabajo eficiente, rapido y agil.
-                        </p> 
 
-                          <p>
-                            En cliente: PSA Peugeot Citroën.
-                            Colaborando en distintos proyectos de la empresa, en el cual se realizan diferentes procesos de calidad  y nuevas mejoras en las aplicaciones ya existentes. La lógica de negocio se basa principalmente en las diferentes operaciones de gestion de las redes de concesionarios.
-                            Mi posición basicamente se centraba en la mejora de codigo y la realizacion de testing unitarios.
+                 
+                        <div class="item" ng-repeat="experiencia in experiencias | filter: search">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title">{{experiencia.tituloJob}}</h3>
+                                    <div class="time">{{experiencia.time}}</div>
+                                </div><!--//upper-row-->
+                                <div class="company">{{experiencia.compania}}</div>
+                            </div><!--//meta-->
+                            <div class="details">
+                                <p>
+                                       {{experiencia.contenido}}
 
-                        </p>  
-                         <p>
-                            En Software Factory: Osde.
-                            
-
-                        </p>  
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
+                                 </p>          
+                            </div><!--//details-->
+                        </div><!--//item-->
                 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Stocker en Global Worker-Falabella</h3>
-                            <div class="time">2014 - 2015</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Olivos, Buenos Aires. República Argentina</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Mantenimiento de diferentes sectores, distribuyendo correctamente los productos presentes en el local y Orientando al cliente en caso de ser necesario. Dirección: Blas Parera 3011, Olivos, Buenos Aires.</p>  
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                     <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Control Calidad</h3>
-                            <div class="time">2012-2013</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Rowa,  Martinez, Buenos aires.</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Control, reporting, registration and administration of different parts from different suppliers of the company. </p>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
+             
             </section><!--//section-->
             
             <section class="section projects-section">
