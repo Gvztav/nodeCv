@@ -72,15 +72,12 @@ Specialties: JavaEE, html5,css3, Python. MySQL y PHP.
 </p>
                 </div><!--//summary-->
             </section><!--//section-->
-
-
-
-            
+  
             <section class="section experiences-section">
                 <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
 
                  
-                        <div class="item" ng-repeat="experiencia in experiencias | filter: search">
+                        <div class="item" ng-repeat="experiencia in experiencias | filter: search | orderBy:'-time'">
                             <div class="meta">
                                 <div class="upper-row">
                                     <h3 class="job-title">{{experiencia.tituloJob}}</h3>
